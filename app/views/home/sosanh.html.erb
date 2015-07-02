@@ -1,0 +1,374 @@
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">		<title>So sánh giá</title>
+		<meta content="Web so sánh giá bán điện máy, điện thoại, đồ điện tử, đồ gia dụng, máy tính, thiết bị kỹ thuật số tại các nhà bán lẻ lớn tại Việt Nam" name="description">
+		<link href="http://www.sosanhgia.com" rel="canonical">
+		<meta content="so sánh giá, web so sánh, websosanh" name="keywords">
+		
+		<meta content="So sánh giá" property="og:title">
+		<meta content="Web so sánh giá bán điện máy, điện thoại, đồ điện tử, đồ gia dụng, máy tính, thiết bị kỹ thuật số tại các nhà bán lẻ lớn tại Việt Nam" property="og:description">
+		<meta content="http://www.sosanhgia.com" property="og:url">
+		<meta content="index,follow" name="robots">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		
+		<link href="/wks.png" rel="shortcut icon">
+		<link href="../assets/plugin/bootstrap.css?v=9" rel="stylesheet">
+		<link href="../assets/plugin/ssg.css?v=14" rel="stylesheet">
+		<link href="../assets/plugin/ssg.responsive.css?v=13" rel="stylesheet">
+		<link type="text/css" href="../assets/plugin/jquery.fancybox.css" rel="stylesheet">
+		<link type="text/css" href="../assets/plugin//flexslider.css" rel="stylesheet">
+		
+		
+		<script type="text/javascript" src="../assets/plugin/jquery.min.js"></script>	
+		<div id="wrapper">
+			<header>
+				<div class="container-fluid" id="header-inner">
+					<div class="row-fluid">
+						<div class="span3">
+							<div id="logo"><a title="so sanh gia" href="http://www.sosanhgia.com">So Sánh Giá</a></div>
+							<div style="display:none" id="logo-mobile"><a href="/">SSG</a></div>
+						</div>
+						<div class="span3 box-launchers-container">
+							<nav id="box-launchers">
+								<ul>
+									<li><a onclick="javascript:showProductChooser();" href="javascript:;">Danh mục Sản phẩm <em>▾</em></a></li>
+									<!--<li><a href="http://www.sosanhgia.com" title='so sanh gia'>So sánh giá</a></li>-->
+								</ul>
+							</nav>
+						</div>
+						
+						<div class="span3 search-span">
+							<nav>
+								<ul class="nav">
+									<li class="line-right">
+										<div class="search-container">
+											<form id="search-form" class="form-search">
+												<input type="search" placeholder="Nhập từ khoá" class="input-medium search-query" id="query">
+												<button class="btn" onclick="validateForm()" type="button" id="do-search" style="min-width: 80px">Tìm Kiếm</button>
+											</form>            
+										</div>
+									</li>   
+								</ul>
+							</nav>
+						</div>
+						<script>
+							function validateForm()
+							{
+								var q = $.trim($('#query').attr('value'));
+								if (q.length &lt; 3)
+								{
+									alert('Từ khóa phải tối thiểu 3 ký tự');
+									return false;
+								}
+								q = q.replace(/ /g, '-');
+								var url= 's-' + q.toLowerCase();
+								window.open(url,'_self');
+								return false;
+							}
+							$(document).ready(function()
+							{
+								$('#query').bind('keypress', function(e)
+								{
+									if(e.keyCode == 13)
+									{
+										$('#do-search').click();
+										return false;
+									}
+								});
+							});
+						</script>	
+					</div>
+				</div>
+			</header>
+			<div class="container-fluid">
+				<div style="display:none;" class="filter-box row-fluid" id="product-chooser">
+					<div class="twelve columns">
+						<div class="whitebg">
+							<div class="li_container" id="li_container1">
+								<ul style="float: left; width: 130px; height: 200px;" class="li_cont1">
+									<li class="letters li_col1" id="l@brandLetters"><span>Điện lạnh</span></li>
+									<li class="li_col1">- <a title="Giá Máy giặt" href="http://www.sosanhgia.com/t8-may-giat.html">Máy giặt</a></li>
+									<li class="li_col1">- <a title="Giá Tủ lạnh" href="http://www.sosanhgia.com/t10-tu-lanh.html">Tủ lạnh</a></li>
+									<li class="li_col1">- <a title="Giá Máy lạnh" href="http://www.sosanhgia.com/t19-may-lanh-dieu-hoa.html">Máy lạnh / Điều hoà</a></li>
+									<li class="li_col1">- <a title="Giá Máy nước nóng" href="http://www.sosanhgia.com/t22-may-nuoc-nong.html">Máy nước nóng</a></li>
+								</ul>
+								<ul style="float: left; width: 130px; height: 200px;" class="li_cont4 undefined">
+									<li class="letters li_col4" id="l@brandLetters"><span>Điện tử</span></li>
+									<li class="li_col4">- <a title="Giá Tivi" href="http://www.sosanhgia.com/t5-tivi.html">Tivi</a></li>
+									<li class="li_col4">- <a title="Giá Amply" href="http://www.sosanhgia.com/t13-amply.html">Amply</a></li>
+									<li class="li_col4">- <a title="Giá Dàn âm thanh" href="http://www.sosanhgia.com/t14-dan-am-thanh.html">Dàn âm thanh</a></li>
+									<li class="li_col4">- <a title="Giá Đầu DVD - Đầu Karaoke" href="http://www.sosanhgia.com/t15-dau-dvd-dau-karaoke.html">Đầu DVD - Đầu Karaoke</a></li>
+									<li class="li_col4">- <a title="Giá Radio - Cassette" href="http://www.sosanhgia.com/t38-radio-cassette.html">Radio - Cassette</a></li>
+								</ul>
+								<ul style="float: left; width: 130px; height: 200px;" class="li_cont2 undefined">
+									<li class="letters li_col2" id="l@brandLetters"><span>Gia dụng</span></li>
+									<li class="li_col2">- <a title="Giá Máy xay sinh tố" href="http://www.sosanhgia.com/t37-may-xay-sinh-to.html">Máy xay sinh tố</a></li>
+									<li class="li_col2">- <a title="Giá Lò vi sóng" href="http://www.sosanhgia.com/t40-lo-vi-song.html">Lò vi sóng</a></li>
+									<li class="li_col2">- <a title="Giá Lò nướng" href="http://www.sosanhgia.com/t46-lo-nuong.html">Lò nướng</a></li>
+									<li class="li_col2">- <a title="Giá Bàn ủi" href="http://www.sosanhgia.com/t41-ban-ui-ban-la.html">Bàn ủi / Bàn là</a></li>
+									<li class="li_col2">- <a title="Giá Máy hút bụi" href="http://www.sosanhgia.com/t42-may-hut-bui.html">Máy hút bụi</a></li>
+									<li class="li_col2">- <a title="Giá Nồi cơm điện" href="http://www.sosanhgia.com/t43-noi-com-dien.html">Nồi cơm điện</a></li>
+									<li class="li_col2">- <a title="Giá Máy ép trái cây" href="http://www.sosanhgia.com/t44-may-ep-trai-cay.html">Máy ép trái cây</a></li>
+									<li class="li_col2">- <a title="Giá Bếp ga nhà bếp" href="http://www.sosanhgia.com/t47-bep-ga.html">Bếp ga</a></li>
+									<li class="li_col2">- <a title="Giá Bếp từ / hồng ngoại nhà bếp" href="http://www.sosanhgia.com/t48-bep-tu-hong-ngoai.html">Bếp từ / hồng ngoại</a></li>
+									<li class="li_col2">- <a title="Giá Bình thủy điện / Phích điện" href="http://www.sosanhgia.com/t45-binh-thuy-dien.html">Bình thủy điện</a></li>
+								</ul>
+								<ul style="float: left; width: 130px; height: 200px;" class="li_cont4 undefined">
+									<li class="letters li_col4" id="l@brandLetters"><span>Thiết bị di động</span></li>
+									<li class="li_col4">- <a title="Giá Điện thoại di động" href="http://www.sosanhgia.com/t6-dien-thoai.html">Điện thoại di động</a></li>
+									<li class="li_col4">- <a title="Giá Máy tính bảng" href="http://www.sosanhgia.com/t39-may-tinh-bang.html">Máy tính bảng</a></li>
+								</ul>
+								<ul style="float: left; width: 130px; height: 200px;" class="li_cont5 undefined">
+									<li class="letters li_col5" id="l@brandLetters"><span>Máy tính</span></li>
+									<li class="li_col5">- <a title="Giá Laptop" href="http://www.sosanhgia.com/t9-laptop.html">Laptop</a></li>
+									<li class="li_col5">- <a title="Giá Máy tính để bàn" href="http://www.sosanhgia.com/t35-may-tinh-de-ban-(pc).html">Máy tính để bàn (PC)</a></li>
+									<li class="li_col5">- <a title="Giá Màn hình máy tính" href="http://www.sosanhgia.com/t36-man-hinh-may-tinh.html">Màn hình máy tính</a></li>
+								</ul>
+								<ul style="float: left; width: 130px; height: 200px;" class="li_cont6 undefined">
+									<li class="letters li_col6" id="l@brandLetters"><span>Kỹ thuật số</span></li>
+									<li class="li_col6">- <a title="Giá Máy ảnh" href="http://www.sosanhgia.com/t11-may-anh.html">Máy ảnh</a></li>
+									<li class="li_col6">- <a title="Giá Máy quay phim" href="http://www.sosanhgia.com/t12-may-quay-phim.html">Máy quay phim</a></li>
+									<li class="li_col6">- <a title="Giá Máy ảnh chuyên nghiệp DSLR" href="http://www.sosanhgia.com/t25-may-anh-chuyen-nghiep.html">Máy ảnh chuyên nghiệp</a></li>
+								</ul>
+								<div style="clear:both; overflow:hidden; height:0px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--end container-fluid-->		
+			<!--<script src="assets/plugin/columnizer.js" type="text/javascript"></script>-->
+			<script type="text/javascript" src="../assets/plugin/bootstrap-collapse.js"></script>	
+			<script type="text/javascript" src="../assets/plugin/app.js"></script>		
+			<div id = 'main' role = "main">
+				<div class="row-fluid">
+					<div class="span4 product-single-media">
+						<div class="product-single-image paddingtop" id="product-single-image">
+							<img alt="Giá bán LG G4" src="images/product/18/lg-g4-1433413398.jpg" itemprop="image"><br>
+							(Giá LG G4)
+						</div>
+						
+					</div>
+					<div class="span8">
+						<div class="product-single-meta">
+							<ul class="breadcrumb">
+								<li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+									<a itemprop="url" title="So sánh giá" href="http://www.sosanhgia.com"><span itemprop="title">Trang chủ</span></a><span class="divider">/</span>
+								</li>
+								<li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+									<a title="Điện thoại" itemprop="url" href="http://www.sosanhgia.com/t6-dien-thoai.html"><span itemprop="title">Điện thoại</span></a> <span class="divider">/</span>
+								</li>
+								<li class="active" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+									<a itemprop="url" title="Giá Điện thoại LG" href="http://www.sosanhgia.com/t6.b5-dien-thoai-lg.html"><span itemprop="title">Điện thoại LG</span></a> 
+								</li>
+							</ul>
+							
+							<a href="http://www.sosanhgia.com/p5959-lg-g4.html" itemprop="url"><h1 itemprop="name">LG G4</h1></a>
+							<div class="row-fluid">
+								<p>Màn hình: Quad HD, 5.5", 1440 x 2560 pixels<br>CPU: Qualcomm Snapdragon 808, 6 nhân, Dual-core 1.8 GHz Cortex-A57 &amp; quad-core 1.44 GHz Cortex-A53<br>RAM 3GB<br>Hệ điều hành: Android 5.0 (Lollipop)<br>Camera chính: 16 MP, Quay phim 4K 2160p@30fps<br>Camera phụ: 8 MP<br>Bộ nhớ trong: 32 GB<br>Thẻ nhớ ngoài: 128 GB<br>Dung lượng pin: 3000 mAh</p>								<a style="color:#000;font-weight:normal" href="#chitiet">[Xem thêm...]</a>
+							</div>
+							
+							<div style="margin-top:10px;" class="row-fluid brand-links">
+								<a style="border-bottom:1px solid #000;color:#C7202B" href="#binhluan">
+									» Ý kiến của bạn về sản phẩm là gì? Hãy cùng chia sẻ <strong>tại đây</strong>
+								</a>
+							</div>
+							
+							<div itemprop="brand" content="LG" style="margin-top: 10px" class="row-fluid">
+								<div itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+									<strong>SSG</strong> tìm thấy <strong>3</strong> nơi bán sản phẩm này. Giá thấp nhất: <span content="13990000" itemprop="price" class="price">13.990.000</span>VND									<span content="VND" itemprop="priceCurrency"></span>
+								</div>
+								
+							</div>
+							<div class="row-fluid dotted-top share-row">
+								<iframe frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; height:20px; width:126px; margin-right:30px" scrolling="no" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.sosanhgia.com%2Fp5959-lg-g4.html&amp;width=126&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=20"></iframe>
+								<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;" id="___plusone_0"><iframe width="100%" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1433927610301" name="I0_1433927610301" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;size=medium&amp;origin=http%3A%2F%2Fwww.sosanhgia.com&amp;url=http%3A%2F%2Fwww.sosanhgia.com%2Fp5959-lg-g4.html&amp;gsrc=3p&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.93TKcO5DWeI.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCO9-MZZT9tjwuznIIeak3-9tiGaSQ#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1433927610301&amp;parent=http%3A%2F%2Fwww.sosanhgia.com&amp;pfname=&amp;rpctoken=62452139" data-gapiattached="true" title="+1"></iframe></div>
+								<iframe frameborder="0" id="twitter-widget-0" scrolling="no" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.c197f64a14a7434e6e58ca9722b54406.vi.html#_=1433927616524&amp;count=horizontal&amp;dnt=false&amp;hashtags=%C4%90i%E1%BB%87n%20tho%E1%BA%A1i&amp;id=twitter-widget-0&amp;lang=vi&amp;original_referer=http%3A%2F%2Fwww.sosanhgia.com%2Fp5959-lg-g4.html&amp;size=m&amp;text=Gi%C3%A1%20LG%20G4%20Th%C3%A1ng%206%2F2015&amp;url=http%3A%2F%2Fwww.sosanhgia.com%2Fp5959-lg-g4.html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 80px; height: 20px;"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div style="margin-top:20px" class="container-fluid" id="more-from-same-title">
+					<div class="row-fluid">
+						<div class="span12">
+							<h2>Chi tiết nơi bán</h2>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					
+					<div class="row-fluid">
+						<div style="border-bottom: 1px dotted #bbb;" class="span8">
+							<div class="row-fluid colhead">
+								<div class="col-img ads">Photo</div>
+								<div class="col-des">Mô tả sản phẩm</div>
+								<div class="col-merchant">Nơi bán</div>
+								<div style="text-align:right" class="col-price">Giá (VND)</div>
+							</div>
+							
+							<div style="margin-bottom:12px" class="row-fluid">
+								<div class="col-img ads">
+									<img src="http://cdn.dmx.vn/Products/Images/42/71989/lg-g4-metalic-ceramic-300x300.jpg" style="width:60px;height:60px">
+								</div>
+								<div class="col-des">
+									<a target="_blank" href="/redirect.php?id=78039&amp;supplier=%C4%90i%E1%BB%87n+m%C3%A1y+XANH&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Metallic%2FCeramic&amp;cat_id=4&amp;isAds=" rel="nofollow"><h4>Điện thoại LG G4 Metallic/Ceramic (<u>Điện máy XANH</u>)</h4></a>
+								<div class="expander">		 </div>	</div>
+								<div class="col-merchant merchant">
+								<img title="Điện máy XANH" alt="Điện máy XANH" src="/images/merchant/1341772501-dienmay.png " class="merchant-logo">	</div>
+								<div style="text-align:right;" class="col-price">
+									<a target="_blank" href="/redirect.php?id=78039&amp;supplier=%C4%90i%E1%BB%87n+m%C3%A1y+XANH&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Metallic%2FCeramic&amp;cat_id=4&amp;isAds=" rel="nofollow"><h3 class="priceH">13.990.000</h3></a><a target="_blank" href="/redirect.php?id=78039&amp;supplier=%C4%90i%E1%BB%87n+m%C3%A1y+XANH&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Metallic%2FCeramic&amp;cat_id=4&amp;isAds=" rel="nofollow" style="font-size: 12px;padding: 4px;" class="btn btn-primary">ĐẾN NƠI BÁN</a>		<div style="text-align:center"><em style="font-size: 10px">Cập nhật: 10/06/2015 </em></div>
+								</div>
+							</div>
+							<div style="margin-bottom:12px" class="row-fluid">
+								<div class="col-img ads">
+									<img src="http://www.mainguyen.vn/img/2015/04/product/colors/m/LG-G4-Leather-Trang_1.jpg" style="width:60px;height:60px">
+								</div>
+								<div class="col-des">
+									<a target="_blank" href="/redirect.php?id=78040&amp;supplier=Mai+Nguy%C3%AAn&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Dual+SIM&amp;cat_id=4&amp;isAds=" rel="nofollow"><h4>Điện thoại LG G4 Dual SIM (<u>Mai Nguyên</u>)</h4></a>
+								<div class="expander">		 </div>	</div>
+								<div class="col-merchant merchant">
+								<img title="Mai Nguyên" alt="Mai Nguyên" src="/images/merchant/mainguyen.png " class="merchant-logo">	</div>
+								<div style="text-align:right;" class="col-price">
+									<a target="_blank" href="/redirect.php?id=78040&amp;supplier=Mai+Nguy%C3%AAn&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Dual+SIM&amp;cat_id=4&amp;isAds=" rel="nofollow"><h3 class="priceH">13.990.000</h3></a><a target="_blank" href="/redirect.php?id=78040&amp;supplier=Mai+Nguy%C3%AAn&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Dual+SIM&amp;cat_id=4&amp;isAds=" rel="nofollow" style="font-size: 12px;padding: 4px;" class="btn btn-primary">ĐẾN NƠI BÁN</a>		<div style="text-align:center"><em style="font-size: 10px">Cập nhật: 10/06/2015 </em></div>
+								</div>
+							</div>
+							<div style="margin-bottom:12px" class="row-fluid">
+								<div class="col-img ads">
+									<img src="http://cdn.tgdd.vn/Products/Images/42/71989/lg-g4-metalic-ceramic-200x200.jpg" style="width:60px;height:60px">
+								</div>
+								<div class="col-des">
+									<a target="_blank" href="/redirect.php?id=78038&amp;supplier=Th%E1%BA%BF+Gi%E1%BB%9Bi+Di+%C4%90%E1%BB%99ng&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Metallic%2FCeramic&amp;cat_id=4&amp;isAds=" rel="nofollow"><h4>Điện thoại LG G4 Metallic/Ceramic (<u>Thế Giới Di Động</u>)</h4></a>
+								<div class="expander">		 </div>	</div>
+								<div class="col-merchant merchant">
+								<img title="Thế Giới Di Động" alt="Thế Giới Di Động" src="/images/merchant/1366002701-logo tgdd.png " class="merchant-logo">	</div>
+								<div style="text-align:right;" class="col-price">
+									<a target="_blank" href="/redirect.php?id=78038&amp;supplier=Th%E1%BA%BF+Gi%E1%BB%9Bi+Di+%C4%90%E1%BB%99ng&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Metallic%2FCeramic&amp;cat_id=4&amp;isAds=" rel="nofollow"><h3 class="priceH">13.990.000</h3></a><a target="_blank" href="/redirect.php?id=78038&amp;supplier=Th%E1%BA%BF+Gi%E1%BB%9Bi+Di+%C4%90%E1%BB%99ng&amp;ps_name=%C4%90i%E1%BB%87n+tho%E1%BA%A1i+LG+G4+Metallic%2FCeramic&amp;cat_id=4&amp;isAds=" rel="nofollow" style="font-size: 12px;padding: 4px;" class="btn btn-primary">ĐẾN NƠI BÁN</a>		<div style="text-align:center"><em style="font-size: 10px">Cập nhật: 10/06/2015 </em></div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div style="margin-top:10px" class="container-fluid" id="more-from-same-title">
+					<section id="chitiet"></section>
+					<div class="row-fluid"><div class="span12"><h2>Chi tiết sản phẩm</h2></div></div>
+				</div>
+				
+				<div class="container-fluid">
+					<div style="text-align:center"></div>
+					<div style="height:20px" class="ads"></div>
+					
+					<div class="row-fluid ">
+						<div style="padding:20px;" class="tab-content whitebg">
+							<div id="tab1" class="tab-pane"></div>
+							<div id="tab2" class="tab-pane active"><table cellspacing="0" cellpadding="0" border="0"><colgroup><col width="142"> <col width="313"> </colgroup><tbody><tr><td width="142" height="19">Màn hình</td><td width="313">&nbsp;</td></tr><tr><td height="19">Công nghệ màn hình</td><td>IPS LCD</td></tr><tr><td height="19">Độ phân giải</td><td>1440 x 2560 pixels</td></tr><tr><td height="19">Màn hình rộng</td><td>5.5"</td></tr><tr><td height="19">Cảm ứng</td><td>Cảm ứng điện dung đa điểm</td></tr><tr><td height="19">Mặt kính cảm ứng</td><td>&nbsp;</td></tr><tr><td height="19" colspan="2">Kính cường lực Gorilla Glass 3</td></tr><tr><td height="19">Camera sau</td><td>&nbsp;</td></tr><tr><td height="19">Độ phân giải</td><td>16 MP</td></tr><tr><td height="19">Quay phim</td><td>Quay phim 4K 2160p@30fps</td></tr><tr><td height="19">Đèn Flash</td><td>Có</td></tr><tr><td height="19">Chụp ảnh nâng cao</td><td>Chụp ảnh RAW, Manual-Mode, Lấy nét laser siêu nhanh, Khẩu độ lớn</td></tr><tr><td height="19">Camera trước</td><td>&nbsp;</td></tr><tr><td height="19">Độ phân giải</td><td>8 MP</td></tr><tr><td height="19">Quay phim</td><td>Có</td></tr><tr><td height="19">Videocall</td><td>Có</td></tr><tr><td height="19">Thông tin khác</td><td>Selfie bằng cử chỉ</td></tr><tr><td height="19">Hệ điều hành - CPU</td><td>&nbsp;</td></tr><tr><td height="19">Hệ điều hành</td><td>Android 5.0 (Lollipop)</td></tr><tr><td height="19">Chipset (hãng SX CPU)</td><td>Qualcomm Snapdragon 808</td></tr><tr><td height="19">Số nhân của CPU</td><td>6 nhân</td></tr><tr><td height="19">Tốc độ CPU</td><td>Dual-core 1.8 GHz Cortex-A57 &amp; quad-core 1.44 GHz Cortex-A53</td></tr><tr><td height="19">Chip đồ họa (GPU)</td><td>Adreno 418</td></tr><tr><td height="19">Bộ nhớ &amp; Lưu trữ</td><td>&nbsp;</td></tr><tr><td height="19">RAM</td><td>3GB</td></tr><tr><td height="19">Bộ nhớ trong (ROM)</td><td>32 GB</td></tr><tr><td height="19">Bộ nhớ khả dụng</td><td>&nbsp;</td></tr><tr><td height="19">Thẻ nhớ ngoài</td><td>MicroSD (T-Flash)</td></tr><tr><td height="19">Hỗ trợ thẻ tối đa</td><td>128 GB</td></tr><tr><td height="19">Kết nối</td><td>&nbsp;</td></tr><tr><td height="19">Băng tần 2G</td><td>GSM 850/900/1800/1900</td></tr><tr><td height="19">Băng tần 3G</td><td>HSDPA 850 / 2100</td></tr><tr><td height="19">Tốc độ 3G</td><td>HSDPA, 42 Mbps; HSUPA, 5.76 Mbps</td></tr><tr><td height="19">4G</td><td>Có</td></tr><tr><td height="19">Số khe sim</td><td>2 SIM 2 sóng</td></tr><tr><td height="19">Loại Sim</td><td>Nano SIM</td></tr><tr><td height="19">Wifi</td><td>Wi-Fi 802.11 a/b/g/n/ac, dual-band, DLNA, Wi-Fi Direct, Wi-Fi hotspot</td></tr><tr><td height="19">GPS</td><td>Có</td></tr><tr><td height="19">Bluetooth</td><td>Có</td></tr><tr><td height="19">NFC</td><td>Có</td></tr><tr><td height="19">Kết nối USB</td><td>Micro USB</td></tr><tr><td height="19">Jack tai nghe</td><td>3.5 mm</td></tr><tr><td height="19">Kết nối khác</td><td>Không</td></tr><tr><td height="19">Thiết kế &amp; Trọng lượng</td><td>&nbsp;</td></tr><tr><td height="19">Thiết kế</td><td>Pin rời</td></tr><tr><td height="19">Chất liệu</td><td>Nhựa</td></tr><tr><td height="19">Kích thước</td><td>Dài 148.9 mm - Ngang 76.1 mm - Dày 9.8 mm</td></tr><tr><td height="19">Trọng lượng (g)</td><td>155</td></tr><tr><td height="19">Thông tin pin</td><td>&nbsp;</td></tr><tr><td height="19">Dung lượng pin</td><td>3000 mAh</td></tr><tr><td height="19">Loại pin</td><td>Pin chuẩn Li-Ion</td></tr><tr><td height="19">Giải trí &amp; Ứng dụng</td><td>&nbsp;</td></tr><tr><td height="19">Xem phim</td><td>3GP, MP4, AVI</td></tr><tr><td height="19">Nghe nhạc</td><td>MP3, WAV, WMA</td></tr><tr><td height="19">Ghi âm</td><td>Có</td></tr><tr><td height="19">FM radio</td><td>Có</td></tr><tr><td height="19">Chức năng khác</td><td>&nbsp;</td></tr></tbody></table></div>;
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="container-fluid">
+				<div style="margin-top:20px" class="row-fluid">
+					<h1>So sánh giá - Tiết kiệm tiền</h1>
+					<p>Chào mừng bạn đến với SoSanhGia.com, đây là website thu nhập thông tin giá cả các sản phẩm điện tử, điện lạnh, viễn thông, gia dụng, tin học, giải trí, kỹ thuật số... tại các nhà bán lẻ lớn, uy tín tại Việt Nam</p>
+					<p>Nếu như giá cả vẫn chưa đủ để bạn quyết định mua hàng thì thông tín khuyến mãi, quà tặng kèm khi mua hàng tại từng nơi bán sẽ giúp bạn dễ dàng quyết định hơn </p>
+					<p>Ngoài ra với mỗi sản phẩm, website cung cấp thông tin đầy đủ về hình ảnh, thông số kỹ thuật, cấu hình sản phẩm cùng với những lời bình luận đánh giá khách quan từ người dùng mà chúng tôi thu thập từ các site chuyên về công nghệ</p>
+				</div>
+			</div>
+		</div><!--! end of #main -->
+		
+		<div class="container-fluid">
+			<div style="margin-top:20px" class="row-fluid">
+				<h2>Tìm kiếm phổ biến</h2>
+				<ul style="list-style-type: none;margin: 0 0 20px 0;">
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t41.b42-ban-ui-ban-la-philips.html">Bàn ủi Philips</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t45-binh-thuy-dien.html">Bình thủy điện</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t14.b7-dan-am-thanh-sony.html">Dàn âm thanh Sony</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t6.b82-dien-thoai-mobiistar.html">Điện thoại Mobistar</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t6.b50-dien-thoai-nokia.html">Điện thoại Nokia</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t40.b15-lo-vi-song-electrolux.html">Lò vi sóng Electrolux</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t40.b1-lo-vi-song-panasonic.html">Lò vi sóng Panasonic</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t40.b17-lo-vi-song-sharp.html">Lò vi sóng Sharp</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t8.b15-may-giat-electrolux.html">Máy giặt Electrolux</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t8.b16-may-giat-hitachi.html">Máy giặt Hitachi</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t8.b1-may-giat-panasonic.html">Máy giặt Panasonic</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t8.b3-may-giat-samsung.html">Máy giặt Samsung</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t8.b11-may-giat-sanyo.html">Máy giặt Sanyo</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t37.b1-may-xay-sinh-to-panasonic.html">Máy xay sinh tố Panasonic</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t43.b63-noi-com-dien-cuckoo.html">Nồi cơm điện Cuckoo</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t43.b1-noi-com-dien-panasonic.html">Nồi cơm điện Panasonic</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t43.b17-noi-com-dien-sharp.html">Nồi cơm điện Sharp</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t43.b64-noi-com-dien-tiger.html">Nồi cơm điện Tiger</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t43.b2-noi-com-dien-toshiba.html">Nồi cơm điện Toshiba</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t39.b52-may-tinh-bang-asus.html">Tablet Asus</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t5.b5-tivi-lg.html">Tivi LG</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t5.b1-tivi-panasonic.html">Tivi Panasonic</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t5.b3-tivi-samsung.html">Tivi Samsung</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t5.b17-tivi-sharp.html">Tivi Sharp</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t5.b7-tivi-sony.html">Tivi Sony</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t5.b24-tivi-tcl.html">Tivi Tcl</a>&nbsp;&nbsp;</li>
+					<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t10.b15-tu-lanh-electrolux.html">Tủ lạnh Electrolux</a>&nbsp;&nbsp;</li>
+				<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t10.b16-tu-lanh-hitachi.html">Tủ lạnh Hitachi</a>&nbsp;&nbsp;</li>
+				<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t10.b19-tu-lanh-mitsubishi.html">Tủ lạnh Mitsubishi</a>&nbsp;&nbsp;</li>
+				<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t10.b3-tu-lanh-samsung.html">Tủ lạnh Samsung</a>&nbsp;&nbsp;</li>
+				<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t10.b17-tu-lanh-sharp.html">Tủ lạnh Sharp</a>&nbsp;&nbsp;</li>
+				<li style="display:inline">▪ <a href="http://www.sosanhgia.com/t10.b2-tu-lanh-toshiba.html">Tủ lạnh Toshiba</a>&nbsp;&nbsp;</li>
+	</ul>
+</div>
+</div>
+<footer>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div id="footer-column-connect" class="span3">
+				<h5>Thông tin</h5>
+				<ul>
+					<li><a href="javascript:$('#webklipper-publisher-widget-container-content-expand-collapse').click();" rel="nofollow">Liên hệ</a></li>
+					<li><a href="http://www.sosanhgia.com/p4291-iphone-6-16gb.html">iPhone 6</a></li>
+					<li><a href="http://www.sosanhgia.com/p3400-asus-zenfone-4-a400cg.html">Zenfone 4</a></li>
+					<li><a href="http://www.sosanhgia.com/p4209-asus-zenfone-5-a501cg.html">Zenfone 5</a></li>
+				</ul>
+			</div>
+			<div id="footer-column-products" class="span3">
+				<h5>Thông dụng</h5>
+				<ul>
+					<li><a href="http://www.sosanhgia.com/t6-dien-thoai.html">Giá điện thoại</a></li>
+					<li><a href="http://www.sosanhgia.com/t10.b16-tu-lanh-hitachi.html">Giá tủ lạnh Hitachi</a></li>
+					<li><a href="http://www.sosanhgia.com/t8.b11-may-giat-sanyo.html">Giá máy giặt Sanyo</a></li>
+					<li><a href="http://www.sosanhgia.com/t5-tivi.html">Giá Tivi</a></li>
+				</ul>
+			</div>
+			<div id="footer-column-connect" class="span3">
+				<h5>Tiện ích</h5>
+				<ul>
+					<li><a href="/feed.rss" rel="nofollow">Feed</a></li>
+					<li><a href="https://www.facebook.com/sosanhgia" rel="nofollow">Facebook</a></li>
+					<li><a target="_blank" href="https://plus.google.com/+Sosanhgia-com" rel="nofollow">Google+</a></li>
+					<li><div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 70px; height: 15px;" id="___plusone_0"><iframe width="100%" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 70px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" tabindex="0" vspace="0" id="I0_1433924481554" name="I0_1433924481554" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;size=small&amp;origin=http%3A%2F%2Fwww.sosanhgia.com&amp;url=http%3A%2F%2Fwww.sosanhgia.com%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.93TKcO5DWeI.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCO9-MZZT9tjwuznIIeak3-9tiGaSQ#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1433924481554&amp;parent=http%3A%2F%2Fwww.sosanhgia.com&amp;pfname=&amp;rpctoken=28951390" data-gapiattached="true" title="+1"></iframe></div></li>
+				</ul>
+			</div>
+			<div id="footer-column-products" class="span3">
+				<h5>Liên kết</h5>
+				<ul>
+					<li><a href="http://www.sosanhgia.com/t8-may-giat.html">So sánh giá máy giặt</a></li>
+					<li><a href="http://www.sosanhgia.com/t10-tu-lanh.html">So sánh giá tủ lạnh</a></li>
+					<li><a href="http://www.sosanhgia.com/t19-may-lanh-dieu-hoa.html">So sánh giá máy lạnh</a></li>
+					<li><a href="http://www.sosanhgia.com/t9-laptop.html">So sánh giá laptop</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="../assets/plugin/jquery.flexslider-min.js"></script>
+<script>
+	$(window).load(function () {
+		$('.flexslider').flexslider();
+	});
+	$('.flexslider').flexslider({
+		animation: 'slide',
+		controlNav: false
+	});
+	</script>							

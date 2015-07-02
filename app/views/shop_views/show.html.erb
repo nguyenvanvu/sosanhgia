@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Shop view name:</strong>
+  <%= @shop_view.shop_view_name %>
+</p>
+
+<p>
+  <strong>Shop view image:</strong>
+  <%= @shop_view.shop_view_image %>
+</p>
+
+<p>
+  <strong>Shop view description:</strong>
+  <%= @shop_view.shop_view_description %>
+</p>
+
+<%= link_to 'Edit', edit_shop_view_path(@shop_view) %> |
+<%= link_to 'Back', shop_views_path %>

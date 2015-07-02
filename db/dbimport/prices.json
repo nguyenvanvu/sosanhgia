@@ -1,0 +1,3 @@
+{"__v":0,"_id":{"$oid":"554e1c7d013beba8179bffc5"},"date":{"$date":"2015-05-30T00:00:00.000Z"},"id_product":"554729c7221398c41d1e7a4c","id_shop":"55377d663805ac1c0dc9be1a","notes":"test","price":"20tr"}
+{"__v":0,"_id":{"$oid":"554e22a6436ff0bc00faf62c"},"date":{"$date":"2015-05-30T00:00:00.000Z"},"id_product":"55472578221398c41d1e7a4a","id_shop":"55377d663805ac1c0dc9be1a","notes":"test","price":"20tr"}
+{"__v":0,"_id":{"$oid":"554e22e6436ff0bc00faf62d"},"date":{"$date":"2015-05-14T00:00:00.000Z"},"id_product":"55472578221398c41d1e7a4a","id_shop":"55377d9a3805ac1c0dc9be1b","notes":"test","price":"10tr"}

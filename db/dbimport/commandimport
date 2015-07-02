@@ -1,0 +1,1 @@
+for n in *; do mongoimport --db tonghopgia_development --collection ${n%.json} --file ${n} ; done

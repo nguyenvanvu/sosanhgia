@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shop_view_name: MyString
+  shop_view_image: MyString
+  shop_view_description: MyString
+
+two:
+  shop_view_name: MyString
+  shop_view_image: MyString
+  shop_view_description: MyString

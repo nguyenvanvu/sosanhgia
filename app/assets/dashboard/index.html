@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><title>Admin | Dashboard</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="images/icons/favicon.ico">
+		<link rel="apple-touch-icon" href="images/icons/favicon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+		<link type="text/css" rel="stylesheet" href="global/vendors/font-awesome/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="global/vendors/simple-line-icons/simple-line-icons.css">
+		<link type="text/css" rel="stylesheet" href="global/vendors/bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="global/vendors/animate.css/animate.css">
+		<link type="text/css" rel="stylesheet" href="global/css/core.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/system.css">
+	</head>
+	<body><!--BEGIN TOPBAR-->
+		<div class="page-header-topbar">
+			<nav id="topbar" role="navigation" class="navbar navbar-default">
+				<div class="container-fluid">
+					<div id="topbar-menu" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a id="logo" href="#">So Sánh Giá</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!--END TOPBAR-->
+		<div id="wrapper"><!--BEGIN PAGE WRAPPER-->
+			<div id="page-wrapper"><!--BEGIN SIDEBAR MAIN-->
+				<div class="sidebar-main sidebar">
+					<div class="sidebar-collapse sidebar-scroll">
+						<ul id="sidebar-main" class="nav">
+							<li class="active"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
+							<li><a href="project.html"><i class="icon-notebook"></i><span class="menu-title">Task by Projects</span><span class="badge badge-success">6</span></a></li>
+							<li><a href="member.html"><i class="icon-users"></i><span class="menu-title">Task by Members</span><span class="badge badge-warning">4</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<!--END SIDEBAR MAIN--><!--BEGIN CONTENT-->
+				<div class="page-content">
+					<div class = "box-content">
+						<div class = "content">
+							<div class = "row">
+								<div class = "col-md-12">
+									<div class = "panel">
+										<div class = "panel-body mtm">
+											<table id = "tblex" class="tree-projects table table-striped table-condensed mbn"></table>
+											<div id="summernote">Hello Summernote</div>
+											<div id="mygallery" >
+												<a href="assets/images/f">
+													<img alt="Title 1" src="assets/images/f.jpg"/>
+												</a>
+												<a href="assets/images/a.jpg">
+													<img alt="Title 1" src="assets/images/a.jpg"/>
+												</a>
+												<a href="assets/images/c.jpg">
+													<img alt="Title 1" src="assets/images/d.jpg"/>
+												</a>
+											
+												
+												<!-- other images... -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>	
+				</div>
+				<!--END PAGE WRAPPER-->
+			</div>
+			<!--BEGIN FOOTER-->
+			<div id="footer">
+				<div class="copyright">2014 © &mu;Admin - Responsive Multi-Style Admin Template</div>
+			</div>
+			<!--END FOOTER-->
+			<script src="global/js/jquery-1.10.2.min.js"></script>
+			<script src="global/js/jquery-migrate-1.2.1.min.js"></script>
+			<script src="global/js/jquery-ui.js"></script>
+			<script src="global/vendors/bootstrap/js/bootstrap.min.js"></script>
+			<script src="global/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+			<script src="global/js/html5shiv.js"></script>
+			<script src="global/js/respond.min.js"></script>
+			<script src="global/vendors/metisMenu/jquery.metisMenu.js"></script>
+			<script src="global/vendors/slimScroll/jquery.slimscroll.js"></script>
+			<!--LOADING SCRIPTS FOR PAGE-->
+			<script src="assets/vendors/justgage/justgage.1.0.1.min.js"></script>
+			<script src="assets/vendors/justgage/raphael.2.1.0.min.js"></script>
+			<script src="assets/vendors/flot-chart/jquery.flot.js"></script>
+			<script src="assets/vendors/flot-chart/jquery.flot.categories.js"></script>
+			<script src="assets/vendors/flot-chart/jquery.flot.pie.js"></script>
+			<script src="assets/vendors/flot-chart/jquery.flot.tooltip.js"></script>
+			<script src="assets/vendors/flot-chart/jquery.flot.resize.js"></script>
+			<script src="assets/vendors/flot-chart/jquery.flot.fillbetween.js"></script>
+			<script src="assets/vendors/flot-chart/jquery.flot.stack.js"></script>
+			<script src="assets/vendors/flot-chart/jquery.flot.spline.js"></script>
+			<script src="assets/vendors/slimScroll/jquery.slimscroll.min.js"></script>
+			<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+			<link href="assets/vendors/summernote/summernote.css" rel="stylesheet">
+			<script src="assets/vendors/summernote/summernote.min.js"></script>
+			<link rel="stylesheet" href="assets/vendors/justifiedGallery/justifiedGallery.css" />
+			<script src="assets/vendors/justifiedGallery/jquery.justifiedGallery.js"></script>
+			<script src="assets/js/index.js"></script>
+			<!--CORE JAVASCRIPT-->
+			<script src="global/js/core.js"></script>
+			<script src="assets/js/system-layout.js"></script>
+			<script>jQuery(document).ready(function () {
+				"use strict";
+				Dashboard.init();
+				Layout.init();
+			});
+			
+			
+			</script>
+		</body>
+	</html>				
